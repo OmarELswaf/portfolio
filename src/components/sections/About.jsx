@@ -4,7 +4,7 @@ import { personalInfo } from '../../data/portfolioData';
 import SectionHeading from '../ui/SectionHeading';
 import GradientText from '../ui/GradientText';
 
-const profileImage = '/src/assets/profile.png';
+const profileImage = '/profile.png';
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },
