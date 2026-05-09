@@ -4,21 +4,21 @@
 
 @layer base {
   :root {
-    --bg-primary: #0a0a0f;
-    --bg-secondary: #111118;
-    --bg-tertiary: #1a1a24;
-    --bg-card: #12121a;
-    --text-primary: #f0f0f5;
-    --text-secondary: #8888a0;
-    --text-muted: #55556a;
-    --accent: #6c63ff;
-    --accent-hover: #7b73ff;
-    --accent-glow: rgba(108, 99, 255, 0.3);
-    --accent-secondary: #00d4aa;
-    --border: rgba(255, 255, 255, 0.06);
-    --border-hover: rgba(255, 255, 255, 0.12);
-    --gradient-1: linear-gradient(135deg, #6c63ff, #00d4aa);
-    --gradient-2: linear-gradient(135deg, #6c63ff, #ff6b9d);
+    --bg-primary: #0b1120;
+    --bg-secondary: #111827;
+    --bg-tertiary: #1f2937;
+    --bg-card: #1f2937;
+    --text-primary: #ffffff;
+    --text-secondary: #e5e7eb;
+    --text-muted: #9ca3af;
+    --accent: #2563eb;
+    --accent-hover: #3b82f6;
+    --accent-glow: rgba(37, 99, 235, 0.3);
+    --accent-secondary: #3b82f6;
+    --border: #1e293b;
+    --border-hover: #2563eb;
+    --gradient-1: linear-gradient(90deg, #2563eb, #3b82f6);
+    --gradient-2: linear-gradient(90deg, #2563eb, #1d4ed8);
   }
 
   .light {
@@ -27,14 +27,14 @@
     --bg-tertiary: #eef0f6;
     --bg-card: #ffffff;
     --text-primary: #1a1a2e;
-    --text-secondary: #555570;
-    --text-muted: #8888a0;
-    --accent: #6c63ff;
-    --accent-hover: #7b73ff;
-    --accent-glow: rgba(108, 99, 255, 0.2);
-    --accent-secondary: #00d4aa;
-    --border: rgba(0, 0, 0, 0.08);
-    --border-hover: rgba(0, 0, 0, 0.15);
+    --text-secondary: #374151;
+    --text-muted: #6b7280;
+    --accent: #2563eb;
+    --accent-hover: #3b82f6;
+    --accent-glow: rgba(37, 99, 235, 0.2);
+    --accent-secondary: #3b82f6;
+    --border: #e5e7eb;
+    --border-hover: #2563eb;
   }
 
   * {
@@ -49,7 +49,7 @@
 
   body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--bg-primary);
+    background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.15), transparent 40%), var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.7;
     overflow-x: hidden;
@@ -57,8 +57,8 @@
   }
 
   ::selection {
-    background-color: rgba(108, 99, 255, 0.3);
-    color: #f0f0f5;
+    background-color: rgba(37, 99, 235, 0.3);
+    color: #ffffff;
   }
 
   /* Scrollbar */
@@ -103,14 +103,14 @@
 
   /* Glassmorphism */
   .glass {
-    background: rgba(18, 18, 26, 0.7);
+    background: rgba(17, 24, 39, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border: 1px solid var(--border);
   }
 
   .light .glass {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
   }
@@ -118,28 +118,28 @@
 
 @layer utilities {
   .text-gradient-1 {
-    background: linear-gradient(135deg, #6c63ff, #00d4aa);
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .text-gradient-2 {
-    background: linear-gradient(135deg, #6c63ff, #ff6b9d);
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .bg-gradient-1 {
-    background: linear-gradient(135deg, #6c63ff, #00d4aa);
+    background: linear-gradient(90deg, #2563eb, #3b82f6);
   }
 
   .bg-gradient-2 {
-    background: linear-gradient(135deg, #6c63ff, #ff6b9d);
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
   }
 
   .border-gradient {
-    border-image: linear-gradient(135deg, #6c63ff, #00d4aa) 1;
+    border-image: linear-gradient(90deg, #2563eb, #3b82f6) 1;
   }
 }

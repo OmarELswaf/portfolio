@@ -42,15 +42,19 @@ export default function ProjectCard({ project }) {
       <div
         className="absolute inset-0 rounded-2xl pointer-events-none z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
         style={{
-          background: `radial-gradient(circle at ${spotlight.x}% ${spotlight.y}%, rgba(108,99,255,0.1), transparent 60%)`,
+          background: `radial-gradient(circle at ${spotlight.x}% ${spotlight.y}%, rgba(37,99,235,0.15), transparent 60%)`,
         }}
       />
 
       {/* Image/Thumbnail area */}
       <div className="relative aspect-video bg-[var(--bg-tertiary)] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--accent)]/10 to-[var(--accent-secondary)]/10 flex items-center justify-center">
-          <span className="text-4xl font-extrabold text-[var(--accent)]/20">{project.title.charAt(0)}</span>
-        </div>
+        {project.image ? (
+          <img src={project.image} alt={project.title} className="w-full h-full object-cover" />
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-br from-[var(--accent)]/20 to-[var(--accent-hover)]/10 flex items-center justify-center">
+            <span className="text-5xl font-extrabold text-[var(--accent)]/30">{project.title.charAt(0)}</span>
+          </div>
+        )}
         {/* Hover overlay */}
         <div className="absolute inset-0 bg-[var(--bg-primary)]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
           <motion.a

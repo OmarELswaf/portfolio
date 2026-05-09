@@ -75,17 +75,17 @@ export default function About() {
               <motion.div
                 animate={{ y: [-10, 10, -10] }}
                 transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-[var(--accent)] opacity-60 blur-sm"
+                className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-[var(--accent)] opacity-60"
               />
               <motion.div
                 animate={{ y: [10, -10, 10] }}
                 transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -bottom-4 -left-4 w-6 h-6 rounded-full bg-[var(--accent-secondary)] opacity-60 blur-sm"
+                className="absolute -bottom-4 -left-4 w-6 h-6 rounded-full bg-[var(--accent-hover)] opacity-60"
               />
               <motion.div
                 animate={{ x: [-5, 5, -5] }}
                 transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute top-1/2 -right-8 w-4 h-4 rounded-full bg-[var(--accent)] opacity-40 blur-sm"
+                className="absolute top-1/2 -right-8 w-4 h-4 rounded-full bg-[var(--accent)] opacity-40"
               />
             </div>
           </motion.div>
