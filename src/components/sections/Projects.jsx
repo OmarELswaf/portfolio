@@ -31,7 +31,7 @@ export default function Projects() {
   return (
     <section id="projects" className="py-24 md:py-32 bg-[var(--bg-secondary)]">
       <div className="max-w-6xl mx-auto px-6">
-        <SectionHeading title="Featured Projects" subtitle="A selection of my recent work and personal projects" />
+        <SectionHeading title="Featured Projects" subtitle="Every card links to its code on GitHub" />
 
         {/* Filter Tabs */}
         <div className="flex justify-center mb-12">
@@ -77,4 +77,4 @@ export default function Projects() {
       </div>
     </section>
   );
-}
+                                  }
