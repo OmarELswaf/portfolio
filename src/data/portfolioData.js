@@ -1,248 +1,171 @@
-
 export const personalInfo = {
   name: "Omar Elsawaf",
   firstName: "Omar",
-  role: "MERN Stack Developer",
-  tagline: "Building performant web applications with React & Node.js",
+  role: "Full-Stack Developer",
+  tagline: "React & TypeScript on the front, Node.js or ASP.NET Core on the back. Based in Cairo, open to junior full-stack roles and paid internships.",
   email: "alsawaf.3mor@gmail.com",
   phone: "+20-103-244-2468",
   location: "Cairo, Egypt",
-  bio: "Motivated Full Stack Developer (MERN) with strong foundations in React.js, Next.js, Node.js, and NestJS. I build scalable web applications with focus on RESTful APIs, database design, and modern software architecture. I'm passionate about creating clean, maintainable code and delivering high-performance solutions that meet user expectations.",
-  bioExtended: "Bachelor of Computer Science from Modern Academy University (2021). Completed professional training in Full Stack .NET and React Web Development. I believe in continuous learning, problem-solving, and applying SOLID principles and design patterns to every project.",
+  bio: "I'm a full-stack developer in Cairo. Day to day that means React and TypeScript on the front and Node.js or ASP.NET Core on the back, with MongoDB, PostgreSQL or SQL Server underneath. Most recently I spent four months at ECM customizing SAP modules; before that, ten months at El-Mesery Group supporting internal systems and writing software for the production floor.",
+  bioExtended: "I graduated in Computer Science from Modern Academy University in 2021, then trained at ITI (full-stack .NET) and Digilians (professional React). I care about the parts that never make the screenshot: schema design, authentication, and a test suite that actually passes.",
   resumeUrl: "https://drive.google.com/file/d/1odoqtUbu9vCplECuH8lrRUHzgoWh9lOl/view?usp=drive_link",
   socials: {
     github: "https://github.com/OmarELswaf",
     linkedin: "https://www.linkedin.com/in/omarelswaf/",
-    twitter: "https://twitter.com/omarelswaf",
     email: "mailto:alsawaf.3mor@gmail.com"
   }
 };
 
 export const stats = [
-  { value: 1, suffix: "+", label: "Years Experience" },
-  { value: 5, suffix: "+", label: "Major Projects" },
-  { value: 2, suffix: "+", label: "Professional Trainings" },
-  { value: 8, suffix: "+", label: "Tech Stack Skills" }
+  { value: 1, suffix: "+", label: "Years Working" },
+  { value: 5, suffix: "", label: "Featured Projects" },
+  { value: 2, suffix: "", label: "Training Programs" },
+  { value: 2, suffix: "", label: "Employers" }
 ];
 
 export const skills = {
   frontend: [
-    { name: "React.js", level: 95, icon: "SiReact" },
-    { name: "Redux", level: 85, icon: "SiRedux" },
-    { name: "Next.js", level: 80, icon: "SiNextdotjs" },
-    { name: "Tailwind CSS", level: 90, icon: "SiTailwindcss" },
-    { name: "JavaScript", level: 95, icon: "SiJavascript" },
-    { name: "HTML5", level: 95, icon: "SiHtml5" },
-    { name: "CSS3", level: 90, icon: "SiCss3" },
-    { name: "TypeScript", level: 75, icon: "SiTypescript" }
+    { name: "React.js", level: 90, icon: "SiReact" },
+    { name: "Next.js", level: 75, icon: "SiNextdotjs" },
+    { name: "TypeScript", level: 75, icon: "SiTypescript" },
+    { name: "JavaScript", level: 90, icon: "SiJavascript" },
+    { name: "Tailwind CSS", level: 85, icon: "SiTailwindcss" },
+    { name: "Bootstrap", level: 80, icon: "SiBootstrap" },
+    { name: "HTML5", level: 90, icon: "SiHtml5" },
+    { name: "CSS3", level: 85, icon: "SiCss3" }
   ],
   backend: [
-    { name: "Node.js", level: 90, icon: "SiNodedotjs" },
-    { name: "Express.js", level: 90, icon: "SiExpress" },
-    { name: "NestJS", level: 75, icon: "SiNestjs" },
-    { name: "REST API", level: 92, icon: "SiPostman" },
-    { name: "Mongoose", level: 85, icon: "SiMongodb" },
-    { name: "JWT", level: 85, icon: "SiJsonwebtokens" }
+    { name: "Node.js", level: 85, icon: "SiNodedotjs" },
+    { name: "Express.js", level: 85, icon: "SiExpress" },
+    { name: "ASP.NET Core", level: 75, icon: "SiDotnet" },
+    { name: "REST API", level: 88, icon: "SiPostman" },
+    { name: "JWT Auth", level: 80, icon: "SiJsonwebtokens" },
+    { name: "Mongoose", level: 80, icon: "SiMongodb" }
   ],
   database: [
-    { name: "MongoDB", level: 88, icon: "SiMongodb" },
-    { name: "SQL Server", level: 75, icon: "SiMicrosoftsqlserver" },
-    { name: "MySQL", level: 70, icon: "SiMysql" },
-    { name: "Postman", level: 85, icon: "SiPostman" }
+    { name: "MongoDB", level: 82, icon: "SiMongodb" },
+    { name: "SQL Server", level: 72, icon: "SiMicrosoftsqlserver" },
+    { name: "PostgreSQL", level: 70, icon: "SiPostgresql" }
   ],
   tools: [
-    { name: "Git/GitHub", level: 90, icon: "SiGit" },
-    { name: "VS Code", level: 95, icon: "SiVscodium" },
+    { name: "Git/GitHub", level: 85, icon: "SiGit" },
     { name: "Docker", level: 70, icon: "SiDocker" },
-    { name: "Vercel", level: 85, icon: "SiVercel" },
-    { name: "Render", level: 75, icon: "SiRender" },
-    { name: "Netlify", level: 80, icon: "SiNetlify" }
+    { name: "VS Code", level: 90, icon: "SiVscodium" },
+    { name: "Vercel", level: 80, icon: "SiVercel" },
+    { name: "Postman", level: 82, icon: "SiPostman" }
   ]
 };
 
 export const experience = [
   {
     id: 1,
-    role: "Full Stack .NET Developer",
-    company: "Information Technology Institute (ITI)",
-    period: "Nov 2023 - Mar 2024",
+    role: "SAP Developer (Junior / Trainee)",
+    company: "ECM",
+    period: "Mar 2025 - Jun 2025",
     description: [
-      "Completed comprehensive Full Stack .NET training program",
-      "Built full CRUD applications with ASP.NET Core MVC and Entity Framework",
-      "Implemented authentication, role-based access control, and server-side validation",
-      "Developed Shipping Management System with file uploads and third-party integrations"
+      "Developed and customized SAP modules based on business requirements",
+      "Supported implementation and maintenance of SAP solutions in enterprise systems",
+      "Debugged and resolved issues in SAP workflows and processes",
+      "Worked with IT and business teams to improve system efficiency and data flow"
     ],
-    tech: ["ASP.NET Core", "Entity Framework", "C#", "SQL Server", "Bootstrap"]
+    tech: ["SAP", "Enterprise Systems", "Debugging", "Business Workflows"]
   },
   {
     id: 2,
-    role: "Professional React Web Developer",
-    company: "Digilians",
+    role: "IT Support / Junior Software Developer",
+    company: "El-Mesery Group for Textile & Weaving",
+    period: "Apr 2024 - Jan 2025",
+    description: [
+      "Provided technical support for internal systems and employees",
+      "Maintained and troubleshot IT infrastructure and network issues",
+      "Supported software tools used in production and administrative departments",
+      "Contributed to development and system-improvement tasks under supervision"
+    ],
+    tech: ["IT Support", "Troubleshooting", "Internal Tools", "Networks"]
+  },
+  {
+    id: 3,
+    role: "Professional React Web Development (Trainee)",
+    company: "Digilians - Military Academy",
     period: "Jan 2026 - Jul 2026",
     description: [
-      "Advanced React.js development training and best practices",
-      "Built production-ready applications with modern React patterns",
-      "Implemented complex state management and optimization techniques",
-      "Focused on performance, testing, and deployment strategies"
+      "Intensive professional React development program",
+      "Built applications with modern React patterns, hooks and state management",
+      "Worked on performance, testing and deployment practices",
+      "Shipped the Al-Qabbani company profile site as applied project work"
     ],
     tech: ["React.js", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"]
   },
   {
-    id: 3,
-    role: "Full Stack MERN Developer",
-    company: "Personal Projects",
-    period: "2026 - Present",
-    description: [
-      "Developed full-stack MERN applications with RESTful APIs",
-      "Implemented JWT authentication and protected routes",
-      "Built responsive UIs with Tailwind CSS and modern design patterns",
-      "Deployed applications on Vercel, Render, and Netlify"
-    ],
-tech: ["React", "Node.js", "Express", "MongoDB", "Tailwind"]
-  },
-
-{
     id: 4,
-    role: "Wazuf Job Finder App",
-    company: "Graduation Project",
-    period: "2026",
-    title: "Wazuf Job Finder App",
+    role: "Full Stack .NET Track (Trainee)",
+    company: "Information Technology Institute (ITI)",
+    period: "Nov 2023 - Mar 2024",
     description: [
-      "Modern job search platform inspired by Wuzzuf with authentication, job listings, advanced filtering, and responsive UI."
+      "Four-month intensive full-stack .NET program",
+      "Built CRUD applications with ASP.NET Core MVC and Entity Framework Core",
+      "Implemented authentication and role-based access control",
+      "Graduation project: Shipping Management System"
     ],
-    image: "/projects/wazuf-app.png",
-    category: "fullstack",
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: true
-  },
-  {
-    id: 5,
-    role: "News Application",
-    company: "News Application API Project",
-    period: "2026", 
-    title: "News Application",
-    description: [
-      "Responsive news platform consuming external APIs with category filtering, search functionality, and dynamic article rendering."
-    ],
-    image: "/projects/news-app.png",
-    category: "frontend",
-    tech: ["React.js", "REST API", "JavaScript", "CSS3"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: false
-  },
-{
-    id: 6,
-    role: "E-Commerce Platform",
-    company: "Personal Project",
-    period: "2026",
-    title: "Advanced E-Commerce Platform",
-    description: [
-      "Full-stack e-commerce application with authentication, product management, shopping cart, checkout flow, and admin dashboard."
-    ],
-    image: "/projects/ecommerce-app.png",
-    category: "fullstack",
-    tech: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Stripe"],
-    liveUrl: "#",
-    githubUrl: "#",
-    featured: true
+    tech: ["ASP.NET Core", "Entity Framework", "C#", "SQL Server", "Bootstrap"]
   }
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "Shipping Management System",
-    description: [
-      "Full-stack application for managing shipments, users, and delivery statuses with file uploads and vendor integrations"
-    ],
+    title: "Sanda - Workforce Management Platform",
+    description: "MERN platform connecting companies with workers: REST APIs for jobs, attendance and payments, JWT auth with role-based access, QR-code check-in, PWA for mobile. Team project; public frontend repo.",
     image: null,
     category: "fullstack",
-    tech: ["ASP.NET Core", "Entity Framework", "SQL Server", "Bootstrap"],
-    liveUrl: "#",
-    githubUrl: "#",
+    tech: ["MongoDB", "Express", "React", "Node.js", "JWT", "PWA"],
+    liveUrl: null,
+    githubUrl: "https://github.com/Hossam-hassan-h/sanda-front",
     featured: true
   },
   {
     id: 2,
-    title: "E-Commerce Web Application",
-    description: [
-      "Scalable MERN stack application featuring product listing, shopping cart, user authentication, and responsive design"
-    ],
+    title: "Task Management App",
+    description: "React 18 + TypeScript on a fully local Supabase stack (PostgreSQL 17, GoTrue, PostgREST, Kong gateway) via Docker Compose. Row-level security isolates each user's data; 44 Vitest tests cover auth, CRUD and filtering.",
     image: null,
     category: "fullstack",
-    tech: ["React.js", "Node.js", "MongoDB", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
+    tech: ["React 18", "TypeScript", "PostgreSQL", "Supabase", "Docker Compose", "Vitest"],
+    liveUrl: null,
+    githubUrl: "https://github.com/OmarELswaf/task-management",
     featured: true
   },
   {
     id: 3,
-    title: "Task Management System",
-    description: [
-      "Full CRUD application with JWT authentication, protected routes, and RESTful API integration"
-    ],
+    title: "Shipping Management System",
+    description: "ASP.NET Core MVC application with Entity Framework Core: CRUD for shipments and users, authentication with role-based authorization, responsive Bootstrap UI. ITI graduation project.",
     image: null,
     category: "fullstack",
-    tech: ["React.js", "Node.js", "Express", "MongoDB", "JWT"],
-    liveUrl: "#",
-    githubUrl: "#",
+    tech: ["ASP.NET Core MVC", "EF Core", "SQL Server", "Bootstrap"],
+    liveUrl: null,
+    githubUrl: "https://github.com/OmarELswaf/Shipping-System",
     featured: true
   },
   {
     id: 4,
-    title: "CRUD Operations System",
-    description: [
-      "Full-stack application with RESTful APIs and structured data management using MongoDB and Express.js"
-    ],
+    title: "Al-Qabbani Company Profile",
+    description: "Arabic (RTL) company profile website for 2026, built with React, Vite and Framer Motion: animated sections and full right-to-left layout with Arabic typography.",
     image: null,
-    category: "fullstack",
-    tech: ["Node.js", "Express.js", "MongoDB", "REST API"],
-    liveUrl: "#",
-    githubUrl: "#",
+    category: "frontend",
+    tech: ["React", "Vite", "Framer Motion", "Arabic RTL"],
+    liveUrl: null,
+    githubUrl: "https://github.com/OmarELswaf/elkbany",
     featured: false
   },
   {
     id: 5,
-    title: "Tic Tac Toe Game",
-    description: [
-      "Interactive web application built with React.js featuring state management and responsive UI styling"
-    ],
+    title: "Salary Manager",
+    description: "Arabic payroll manager (مدير الرواتب): employee and salary administration with dashboard statistics, built as a fully RTL single-page app.",
     image: null,
     category: "frontend",
-    tech: ["React.js", "JavaScript", "CSS3"],
-    liveUrl: "#",
-    githubUrl: "#",
+    tech: ["JavaScript", "CSS", "Arabic RTL", "Dashboard"],
+    liveUrl: null,
+    githubUrl: "https://github.com/OmarELswaf/-salary-app",
     featured: false
-  }
-];
-
-export const testimonials = [
-  {
-    id: 1,
-    name: "ITI Mentor",
-    role: "Full Stack .NET Training",
-    text: "Demonstrated strong grasp of enterprise application development with ASP.NET Core. Excellent problem-solving and quick learning ability.",
-    rating: 5,
-    avatar: null
-  },
-  {
-    id: 2,
-    name: "Digilians Instructor",
-    role: "Professional React Web Developer",
-    text: "Omar shows exceptional understanding of React best practices and modern development patterns. Ready for professional-level projects.",
-    rating: 5,
-    avatar: null
-  },
-  {
-    id: 3,
-    name: "Modern Academy",
-    role: "Bachelor of Computer Science",
-    text: "Strong academic foundation with practical application of computer science principles. Well-prepared for professional development roles.",
-    rating: 5,
-    avatar: null
   }
 ];
 
@@ -250,6 +173,7 @@ export const navLinks = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
+  { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" }
 ];
