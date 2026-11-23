@@ -21,7 +21,7 @@ export const personalInfo = {
 
 export const stats = [
   { value: 1, suffix: "+", label: "Years Working" },
-  { value: 11, suffix: "", label: "Featured Projects" },
+  { value: 12, suffix: "", label: "Featured Projects" },
   { value: 2, suffix: "", label: "Training Programs" },
   { value: 2, suffix: "", label: "Employers" }
 ];
@@ -168,6 +168,17 @@ export const projects = [
     tech: ["Node.js", "Socket.io", "MongoDB", "Express", "React", "Tailwind"],
     liveUrl: "https://majlis-chat-delta.vercel.app",
     githubUrl: "https://github.com/OmarELswaf/majlis-chat",
+    featured: true
+  },
+  {
+    id: 12,
+    title: "Makhzan - GitHub Explorer",
+    description: "GitHub explorer on the live public REST API (no key): debounced search across 400M+ repositories and 100M+ developers, client-side sorting by stars, forks or recency, profile drill-down with a language-distribution bar and top repos, and recent searches persisted locally. Pure mapping layer covered by 9 unit tests. All data is live, no demo data.",
+    image: "/makhzan.png",
+    category: "frontend",
+    tech: ["React", "Vite", "Tailwind", "GitHub API"],
+    liveUrl: "https://makhzan-phi.vercel.app",
+    githubUrl: "https://github.com/OmarELswaf/makhzan",
     featured: true
   },
   {
