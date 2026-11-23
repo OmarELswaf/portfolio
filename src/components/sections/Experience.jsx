@@ -12,7 +12,7 @@ export default function Experience() {
   return (
     <section id="experience" className="py-24 md:py-32" ref={sectionRef}>
       <div className="max-w-6xl mx-auto px-6">
-        <SectionHeading title="Experience" subtitle="My professional journey and contributions" />
+        <SectionHeading title="Experience" subtitle="Where I have worked and trained" />
 
         <div className="relative">
           {/* Center timeline line */}
