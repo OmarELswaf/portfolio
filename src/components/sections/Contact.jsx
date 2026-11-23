@@ -54,7 +54,7 @@ export default function Contact() {
   return (
     <section id="contact" className="py-24 md:py-32">
       <div className="max-w-6xl mx-auto px-6">
-        <SectionHeading title="Let's Work Together" subtitle="Have a project in mind? Let's create something amazing" />
+        <SectionHeading title="Get in Touch" subtitle="Open to junior roles, internships and freelance work" />
 
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Form */}
