@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import * as SiIcons from 'react-icons/si';
-import { FiCloud } from 'react-icons/fi';
+import { FiCloud, FiDatabase } from 'react-icons/fi';
 
 const iconMap = {
   SiReact: SiIcons.SiReact,
@@ -28,6 +28,11 @@ const iconMap = {
   SiGithubactions: SiIcons.SiGithubactions,
   SiLinux: SiIcons.SiLinux,
   SiVscodium: SiIcons.SiVscodium,
+  SiBootstrap: SiIcons.SiBootstrap,
+  SiPostgresql: SiIcons.SiPostgresql,
+  SiMicrosoftsqlserver: FiDatabase,
+  SiVercel: SiIcons.SiVercel,
+  SiDotnet: SiIcons.SiDotnet,
 };
 
 export default function TechBadge({ name, icon, level }) {
