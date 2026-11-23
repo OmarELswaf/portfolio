@@ -21,7 +21,7 @@ export const personalInfo = {
 
 export const stats = [
   { value: 1, suffix: "+", label: "Years Working" },
-  { value: 10, suffix: "", label: "Featured Projects" },
+  { value: 11, suffix: "", label: "Featured Projects" },
   { value: 2, suffix: "", label: "Training Programs" },
   { value: 2, suffix: "", label: "Employers" }
 ];
@@ -168,6 +168,17 @@ export const projects = [
     tech: ["Node.js", "Socket.io", "MongoDB", "Express", "React", "Tailwind"],
     liveUrl: "https://majlis-chat-delta.vercel.app",
     githubUrl: "https://github.com/OmarELswaf/majlis-chat",
+    featured: true
+  },
+  {
+    id: 11,
+    title: "Sahab - Weather Dashboard",
+    description: "Weather dashboard on the free Open-Meteo API (no key): city search with autocomplete, geolocation, current conditions, a 24-hour temperature chart and a 7-day forecast with week-scaled range bars. °C/°F toggle and last city persisted. Pure mapping module covered by 7 unit tests. All data is live, no demo data.",
+    image: "/sahab-weather.png",
+    category: "frontend",
+    tech: ["React", "Vite", "Tailwind", "Recharts", "Open-Meteo API"],
+    liveUrl: "https://sahab-weather-six.vercel.app",
+    githubUrl: "https://github.com/OmarELswaf/sahab-weather",
     featured: true
   },
   {
