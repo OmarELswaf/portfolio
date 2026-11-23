@@ -21,7 +21,7 @@ export const personalInfo = {
 
 export const stats = [
   { value: 1, suffix: "+", label: "Years Working" },
-  { value: 7, suffix: "", label: "Featured Projects" },
+  { value: 8, suffix: "", label: "Featured Projects" },
   { value: 2, suffix: "", label: "Training Programs" },
   { value: 2, suffix: "", label: "Employers" }
 ];
@@ -135,6 +135,17 @@ export const projects = [
     tech: ["React", "Vite", "Node.js", "MongoDB", "JWT", "Vercel"],
     liveUrl: "https://tabboush-menu.vercel.app/r/tabboush",
     githubUrl: "https://github.com/OmarELswaf/tabboush-menu",
+    featured: true
+  },
+  {
+    id: 8,
+    title: "Nexus Admin - Dashboard & JWT Auth API",
+    description: "Full-stack admin dashboard for a store: Express API with short-lived JWT access tokens, rotating httpOnly refresh cookies, bcrypt hashing, role-based access (viewer/manager/admin), rate limiting and zod validation, behind a React + Tailwind + Recharts UI with revenue analytics, order management and user administration. 7 integration tests cover the auth flow and RBAC. Live demo runs on clearly labeled seeded demo data.",
+    image: "/nexus-admin.jpg",
+    category: "fullstack",
+    tech: ["Node.js", "Express", "React", "Tailwind", "JWT", "Recharts"],
+    liveUrl: "https://nexus-admin-two-alpha.vercel.app",
+    githubUrl: "https://github.com/OmarELswaf/nexus-admin",
     featured: true
   },
   {
