@@ -61,14 +61,14 @@ export default function Hero() {
 
             {/* Heading */}
             <motion.h1 variants={fadeUp} className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-tight mb-6">
-              <span className="text-[var(--text-primary)]">I Build</span>
+              <span className="text-[var(--text-primary)]">I build web apps,</span>
               <br />
-              <TextReveal text="Digital Experiences" className="text-gradient-1" delay={0.5} />
+              <TextReveal text="front end to back end" className="text-gradient-1" delay={0.5} />
             </motion.h1>
 
             {/* Subtext */}
             <motion.p variants={fadeUp} className="text-[var(--text-secondary)] text-lg max-w-md mx-auto lg:mx-0 mb-8">
-              {personalInfo.tagline}. Crafting seamless user experiences with modern web technologies.
+              {personalInfo.tagline}
             </motion.p>
 
             {/* Buttons */}
