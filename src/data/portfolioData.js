@@ -21,7 +21,7 @@ export const personalInfo = {
 
 export const stats = [
   { value: 1, suffix: "+", label: "Years Working" },
-  { value: 9, suffix: "", label: "Featured Projects" },
+  { value: 10, suffix: "", label: "Featured Projects" },
   { value: 2, suffix: "", label: "Training Programs" },
   { value: 2, suffix: "", label: "Employers" }
 ];
@@ -157,6 +157,17 @@ export const projects = [
     tech: ["Node.js", "Express", "React", "Tailwind", "Recharts", "zod"],
     liveUrl: "https://qisr-iota.vercel.app",
     githubUrl: "https://github.com/OmarELswaf/qisr",
+    featured: true
+  },
+  {
+    id: 10,
+    title: "Majlis - Realtime Chat Rooms",
+    description: "Realtime chat rooms with Socket.io: live messaging, presence and typing indicators, MongoDB persistence via Mongoose behind a swappable store interface, React + Tailwind client. 11 tests cover the REST API and the realtime socket flow with two live clients. Hosted demo is honestly labeled as simulated (WebSockets need a long-lived server); the full backend runs locally in one command.",
+    image: "/majlis-chat.png",
+    category: "fullstack",
+    tech: ["Node.js", "Socket.io", "MongoDB", "Express", "React", "Tailwind"],
+    liveUrl: "https://majlis-chat-delta.vercel.app",
+    githubUrl: "https://github.com/OmarELswaf/majlis-chat",
     featured: true
   },
   {
