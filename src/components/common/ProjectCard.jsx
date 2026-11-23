@@ -57,6 +57,7 @@ export default function ProjectCard({ project }) {
         )}
         {/* Hover overlay */}
         <div className="absolute inset-0 bg-[var(--bg-primary)]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+          {project.liveUrl && (
           <motion.a
             href={project.liveUrl}
             target="_blank"
@@ -67,6 +68,7 @@ export default function ProjectCard({ project }) {
           >
             <FiExternalLink size={18} />
           </motion.a>
+          )}
           <motion.a
             href={project.githubUrl}
             target="_blank"
