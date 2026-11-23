@@ -27,7 +27,7 @@ export default function Skills() {
   return (
     <section id="skills" className="py-24 md:py-32">
       <div className="max-w-6xl mx-auto px-6">
-        <SectionHeading title="Skills & Technologies" subtitle="Technologies I work with to bring ideas to life" />
+        <SectionHeading title="Skills & Technologies" subtitle="What I reach for day to day" />
 
         {/* Tabs */}
         <div className="flex justify-center mb-12">
