@@ -1,147 +1,18 @@
-import { motion } from 'framer-motion';
-import { FiMapPin, FiBriefcase, FiCode, FiCheckCircle } from 'react-icons/fi';
 import { personalInfo } from '../../data/portfolioData';
+import Reveal from '../ui/Reveal';
 import SectionHeading from '../ui/SectionHeading';
-import GradientText from '../ui/GradientText';
-
-const profileImage = '/profile.png';
-
-const fadeUp = {
-  hidden: { opacity: 0, y: 60 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] } }
-};
-
-const staggerContainer = {
-  hidden: {},
-  visible: { transition: { staggerChildren: 0.1 } }
-};
-
-const infoItems = [
-  { icon: FiMapPin, label: 'Location', value: personalInfo.location },
-  { icon: FiBriefcase, label: 'Experience', value: '1+ Years' },
-  { icon: FiCode, label: 'Specialization', value: 'MERN + .NET' },
-  { icon: FiCheckCircle, label: 'Availability', value: 'Open to Work' },
-];
-
-const whatIDo = [
-  {
-    icon: '🎨',
-    title: 'Frontend',
-    description: 'React and TypeScript interfaces, responsive and RTL-aware. Two of my projects are fully Arabic.',
-  },
-  {
-    icon: '⚙️',
-    title: 'Backend',
-    description: 'REST APIs with Node/Express or ASP.NET Core, JWT auth and role-based access control.',
-  },
-  {
-    icon: '🔄',
-    title: 'Data & DevOps',
-    description: 'PostgreSQL, MongoDB and SQL Server schemas, plus Docker Compose stacks that boot with one command.',
-  },
-];
 
 export default function About() {
   return (
-    <section id="about" className="py-24 md:py-32 bg-[var(--bg-secondary)]">
-      <div className="max-w-6xl mx-auto px-6">
-        <SectionHeading title="About Me" subtitle="The short version" />
-
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
-          {/* Left - Avatar Placeholder */}
-          <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            className="lg:w-[40%] flex justify-center"
-          >
-            <div className="relative w-72 h-72 md:w-80 md:h-80">
-              {/* Gradient border */}
-              <div className="absolute inset-0 rounded-2xl bg-gradient-1 p-[2px]" style={{ transform: 'rotate(3deg)' }}>
-                <div className="w-full h-full rounded-2xl bg-[var(--bg-card)] flex items-center justify-center overflow-hidden">
-                  <img 
-                    src={profileImage} 
-                    alt="Omar Elsawaf" 
-                    className="w-full h-full object-cover rounded-2xl"
-                    onError={(e) => {
-                      e.target.style.display = 'none';
-                      e.target.parentElement.innerHTML = '<div class="text-6xl font-extrabold text-gradient-1">OE</div>';
-                    }}
-                  />
-                </div>
-              </div>
-              {/* Floating decorative elements */}
-              <motion.div
-                animate={{ y: [-10, 10, -10] }}
-                transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -top-4 -right-4 w-8 h-8 rounded-full bg-[var(--accent)] opacity-60"
-              />
-              <motion.div
-                animate={{ y: [10, -10, 10] }}
-                transition={{ duration: 5, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute -bottom-4 -left-4 w-6 h-6 rounded-full bg-[var(--accent-hover)] opacity-60"
-              />
-              <motion.div
-                animate={{ x: [-5, 5, -5] }}
-                transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
-                className="absolute top-1/2 -right-8 w-4 h-4 rounded-full bg-[var(--accent)] opacity-40"
-              />
-            </div>
-          </motion.div>
-
-          {/* Right - Content */}
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            className="lg:w-[60%]"
-          >
-            <motion.p variants={fadeUp} className="text-[var(--text-secondary)] mb-4 leading-relaxed">
-              {personalInfo.bio}
-            </motion.p>
-            <motion.p variants={fadeUp} className="text-[var(--text-secondary)] mb-8 leading-relaxed">
-              {personalInfo.bioExtended}
-            </motion.p>
-
-            {/* Info Grid */}
-            <motion.div variants={staggerContainer} className="grid grid-cols-2 gap-4 mb-8">
-              {infoItems.map((item) => (
-                <motion.div
-                  key={item.label}
-                  variants={fadeUp}
-                  className="flex items-center gap-3 p-3 rounded-xl border border-[var(--border)] bg-[var(--bg-card)]"
-                >
-                  <item.icon className="text-[var(--accent)] text-lg flex-shrink-0" />
-                  <div>
-                    <div className="text-xs text-[var(--text-muted)] uppercase tracking-wider">{item.label}</div>
-                    <div className="text-sm font-semibold text-[var(--text-primary)]">{item.value}</div>
-                  </div>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            {/* What I Do */}
-            <motion.div variants={fadeUp}>
-              <h3 className="text-lg font-bold text-[var(--text-primary)] mb-4">What I Do</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                {whatIDo.map((item) => (
-                  <motion.div
-                    key={item.title}
-                    whileHover={{ y: -4, boxShadow: '0 8px 30px rgba(0,0,0,0.3)' }}
-                    className="p-4 rounded-2xl border border-[var(--border)] bg-[var(--bg-card)] hover:border-[var(--accent)] transition-colors"
-                  >
-                    <span className="text-2xl mb-2 block">{item.icon}</span>
-                    <h4 className="font-semibold text-[var(--text-primary)] mb-1">{item.title}</h4>
-                    <p className="text-xs text-[var(--text-secondary)] leading-relaxed">{item.description}</p>
-                  </motion.div>
-                ))}
-              </div>
-            </motion.div>
-          </motion.div>
+    <section id="about" className="py-16 lg:py-20 scroll-mt-16">
+      <Reveal>
+        <SectionHeading index="01" title="About" />
+        <div className="space-y-4 text-[var(--text-muted)] leading-relaxed max-w-2xl">
+          <p>{personalInfo.bio}</p>
+          <p>{personalInfo.bioExtended}</p>
+          <p className="mono text-sm text-[var(--accent)]">{personalInfo.location}</p>
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }
