@@ -2,6 +2,7 @@ export const personalInfo = {
   name: "Omar Elsawaf",
   firstName: "Omar",
   role: "Full-Stack Developer",
+  headline: "I build web apps end to end — React on the front, Node.js or ASP.NET Core on the back.",
   tagline: "React & TypeScript on the front, Node.js or ASP.NET Core on the back. Based in Cairo, open to junior full-stack roles and paid internships.",
   email: "alsawaf.3mor@gmail.com",
   phone: "+20-103-244-2468",
@@ -12,6 +13,8 @@ export const personalInfo = {
   socials: {
     github: "https://github.com/OmarELswaf",
     linkedin: "https://www.linkedin.com/in/omarelswaf/",
+    fiverr: "https://www.fiverr.com/omarelswaf?public_mode=true",
+    freelancer: "https://www.freelancer.com/u/alsawaf3mor",
     email: "mailto:alsawaf.3mor@gmail.com"
   }
 };
@@ -181,10 +184,9 @@ export const projects = [
 ];
 
 export const navLinks = [
-  { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
   { name: "Experience", href: "#experience" },
   { name: "Projects", href: "#projects" },
+  { name: "Skills", href: "#skills" },
   { name: "Contact", href: "#contact" }
 ];
