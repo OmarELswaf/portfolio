@@ -21,7 +21,7 @@ export const personalInfo = {
 
 export const stats = [
   { value: 1, suffix: "+", label: "Years Working" },
-  { value: 8, suffix: "", label: "Featured Projects" },
+  { value: 9, suffix: "", label: "Featured Projects" },
   { value: 2, suffix: "", label: "Training Programs" },
   { value: 2, suffix: "", label: "Employers" }
 ];
@@ -146,6 +146,17 @@ export const projects = [
     tech: ["Node.js", "Express", "React", "Tailwind", "JWT", "Recharts"],
     liveUrl: "https://nexus-admin-two-alpha.vercel.app",
     githubUrl: "https://github.com/OmarELswaf/nexus-admin",
+    featured: true
+  },
+  {
+    id: 9,
+    title: "Qisr - URL Shortener & Click Analytics",
+    description: "Full-stack URL shortener: Express API with zod validation, rate limiting, helmet and QR codes, plus a React dashboard with Recharts click analytics (daily clicks, referrers, devices). 9 integration tests cover create, redirect, tracking and stats. Live demo runs on clearly labeled seeded demo data.",
+    image: "/qisr-dashboard.png",
+    category: "fullstack",
+    tech: ["Node.js", "Express", "React", "Tailwind", "Recharts", "zod"],
+    liveUrl: "https://qisr-iota.vercel.app",
+    githubUrl: "https://github.com/OmarELswaf/qisr",
     featured: true
   },
   {
