@@ -18,7 +18,7 @@ export const personalInfo = {
 
 export const stats = [
   { value: 1, suffix: "+", label: "Years Working" },
-  { value: 5, suffix: "", label: "Featured Projects" },
+  { value: 6, suffix: "", label: "Featured Projects" },
   { value: 2, suffix: "", label: "Training Programs" },
   { value: 2, suffix: "", label: "Employers" }
 ];
@@ -112,6 +112,17 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    id: 6,
+    title: "Souq - MERN E-Commerce Store",
+    description: "Full-stack e-commerce: Express + MongoDB API (JWT auth, bcrypt, server-side pricing and stock handling) behind a React + Vite storefront with search, filters, cart and cash-on-delivery checkout. API test suite included. Live demo runs on clearly labeled demo data.",
+    image: "/souq-home.png",
+    category: "fullstack",
+    tech: ["MongoDB", "Express", "React", "Node.js", "JWT", "Vite"],
+    liveUrl: "https://souq-store-roan.vercel.app/",
+    githubUrl: "https://github.com/OmarELswaf/souq-store",
+    featured: true
+  },
   {
     id: 1,
     title: "Sanda - Workforce Management Platform",
