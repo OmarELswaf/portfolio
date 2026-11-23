@@ -9,7 +9,7 @@ export const personalInfo = {
   location: "Cairo, Egypt",
   bio: "I'm a full-stack developer in Cairo. Day to day that means React and TypeScript on the front and Node.js or ASP.NET Core on the back, with MongoDB, PostgreSQL or SQL Server underneath. Most recently I spent four months at ECM customizing SAP modules; before that, ten months at El-Mesery Group supporting internal systems and writing software for the production floor.",
   bioExtended: "I graduated in Computer Science from Modern Academy University in 2021, then trained at ITI (full-stack .NET) and Digilians (professional React). I care about the parts that never make the screenshot: schema design, authentication, and a test suite that actually passes.",
-  resumeUrl: "https://drive.google.com/file/d/1odoqtUbu9vCplECuH8lrRUHzgoWh9lOl/view?usp=drive_link",
+  resumeUrl: "/cv/Omar-Elsawaf-CV.pdf",
   socials: {
     github: "https://github.com/OmarELswaf",
     linkedin: "https://www.linkedin.com/in/omarelswaf/",
@@ -21,7 +21,7 @@ export const personalInfo = {
 
 export const stats = [
   { value: 1, suffix: "+", label: "Years Working" },
-  { value: 6, suffix: "", label: "Featured Projects" },
+  { value: 7, suffix: "", label: "Featured Projects" },
   { value: 2, suffix: "", label: "Training Programs" },
   { value: 2, suffix: "", label: "Employers" }
 ];
@@ -124,6 +124,17 @@ export const projects = [
     tech: ["MongoDB", "Express", "React", "Node.js", "JWT", "Vite"],
     liveUrl: "https://souq-store-roan.vercel.app/",
     githubUrl: "https://github.com/OmarELswaf/souq-store",
+    featured: true
+  },
+  {
+    id: 7,
+    title: "Tabboush - QR Menu & WhatsApp Ordering",
+    description: "White-label multi-tenant QR-menu platform for restaurants, Arabic RTL throughout: customer accounts with order history, cart and wa.me WhatsApp ordering, plus an admin panel for menu, branding and order statuses. Serverless Node API with JWT auth and MongoDB models; the live demo runs on clearly labeled demo data in static-fallback mode, no database needed.",
+    image: "/tabboush-menu.jpg",
+    category: "fullstack",
+    tech: ["React", "Vite", "Node.js", "MongoDB", "JWT", "Vercel"],
+    liveUrl: "https://tabboush-menu.vercel.app/r/tabboush",
+    githubUrl: "https://github.com/OmarELswaf/tabboush-menu",
     featured: true
   },
   {
