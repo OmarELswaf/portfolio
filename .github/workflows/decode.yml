@@ -1,0 +1,28 @@
+name: Decode staged base64 assets
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  decode:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Decode any staged .b64 files and commit
+        run: |
+          set -e
+          changed=0
+          for f in $(find . -name '*.b64' -not -path './node_modules/*'); do
+            out="${f%.b64}"
+            base64 -d "$f" > "$out"
+            rm "$f"
+            changed=1
+          done
+          if [ "$changed" = "1" ]; then
+            git config user.name "OmarELswaf"
+            git config user.email "alsawaf.3mor@gmail.com"
+            git add -A
+            git commit -m "Decode staged base64 assets"
+            git push
+          fi
