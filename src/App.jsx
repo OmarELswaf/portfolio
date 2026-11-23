@@ -1,53 +1,28 @@
-import { useEffect } from 'react';
-import { BrowserRouter } from 'react-router-dom';
 import { ThemeProvider } from './context/ThemeContext';
-import LoadingScreen from './components/ui/LoadingScreen';
-import ScrollProgress from './components/ui/ScrollProgress';
-import KonamiEaster from './components/ui/KonamiEaster';
-import Navbar from './components/layout/Navbar';
+import SideRail from './components/layout/SideRail';
 import Footer from './components/layout/Footer';
-import CursorFollower from './components/layout/CursorFollower';
-import Hero from './components/sections/Hero';
 import About from './components/sections/About';
-import Skills from './components/sections/Skills';
-import Projects from './components/sections/Projects';
 import Experience from './components/sections/Experience';
+import Projects from './components/sections/Projects';
+import Skills from './components/sections/Skills';
 import Contact from './components/sections/Contact';
 
 function App() {
-  useEffect(() => {
-    const accentShift = () => {
-      const scrollProgress = window.scrollY / (document.documentElement.scrollHeight - window.innerHeight);
-      const hueShift = scrollProgress * 30;
-      document.documentElement.style.setProperty('--accent', `hsl(${240 + hueShift}, 100%, 67%)`);
-      document.documentElement.style.setProperty('--accent-hover', `hsl(${240 + hueShift}, 100%, 73%)`);
-    };
-    window.addEventListener('scroll', accentShift, { passive: true });
-    return () => window.removeEventListener('scroll', accentShift);
-  }, []);
-
   return (
-    <BrowserRouter>
-      <ThemeProvider>
-        <div className="noise-overlay">
-          <LoadingScreen />
-          <ScrollProgress />
-          <CursorFollower />
-          <KonamiEaster />
-          <Navbar />
-          <main>
-            <Hero />
-            <About />
-            <Skills />
-            <Experience />
-            <Projects />
-            <Contact />
-          </main>
+    <ThemeProvider>
+      <div className="lg:flex lg:max-w-6xl lg:mx-auto lg:gap-12 px-6 md:px-12">
+        <SideRail />
+        <main className="lg:flex-1 lg:py-24 min-w-0">
+          <About />
+          <Experience />
+          <Projects />
+          <Skills />
+          <Contact />
           <Footer />
-        </div>
-      </ThemeProvider>
-    </BrowserRouter>
+        </main>
+      </div>
+    </ThemeProvider>
   );
 }
 
-export default App
+export default App;
