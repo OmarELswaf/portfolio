@@ -19,7 +19,7 @@ const staggerContainer = {
 const infoItems = [
   { icon: FiMapPin, label: 'Location', value: personalInfo.location },
   { icon: FiBriefcase, label: 'Experience', value: '1+ Years' },
-  { icon: FiCode, label: 'Specialization', value: 'MERN Stack' },
+  { icon: FiCode, label: 'Specialization', value: 'MERN + .NET' },
   { icon: FiCheckCircle, label: 'Availability', value: 'Open to Work' },
 ];
 
@@ -27,17 +27,17 @@ const whatIDo = [
   {
     icon: '🎨',
     title: 'Frontend',
-    description: 'Building responsive, pixel-perfect UIs with React.js and modern CSS frameworks',
+    description: 'React and TypeScript interfaces, responsive and RTL-aware. Two of my projects are fully Arabic.',
   },
   {
     icon: '⚙️',
     title: 'Backend',
-    description: 'Designing scalable REST APIs and microservices with Node.js & Express',
+    description: 'REST APIs with Node/Express or ASP.NET Core, JWT auth and role-based access control.',
   },
   {
     icon: '🔄',
-    title: 'Full Stack',
-    description: 'End-to-end application development from database design to deployment',
+    title: 'Data & DevOps',
+    description: 'PostgreSQL, MongoDB and SQL Server schemas, plus Docker Compose stacks that boot with one command.',
   },
 ];
 
@@ -45,7 +45,7 @@ export default function About() {
   return (
     <section id="about" className="py-24 md:py-32 bg-[var(--bg-secondary)]">
       <div className="max-w-6xl mx-auto px-6">
-        <SectionHeading title="About Me" subtitle="Get to know me and what drives my passion for development" />
+        <SectionHeading title="About Me" subtitle="The short version" />
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           {/* Left - Avatar Placeholder */}
