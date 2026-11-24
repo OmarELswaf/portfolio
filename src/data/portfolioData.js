@@ -21,7 +21,7 @@ export const personalInfo = {
 
 export const stats = [
   { value: 1, suffix: "+", label: "Years Working" },
-  { value: 12, suffix: "", label: "Featured Projects" },
+  { value: 13, suffix: "", label: "Featured Projects" },
   { value: 2, suffix: "", label: "Training Programs" },
   { value: 2, suffix: "", label: "Employers" }
 ];
@@ -115,6 +115,17 @@ export const experience = [
 ];
 
 export const projects = [
+  {
+    id: 13,
+    title: "GymPilot - Gym Management Platform",
+    description: "Multi-tenant gym management platform, live in beta: members and subscription plans with balances, QR-code check-in, class scheduling and booking, a member self-service app, billing and reports, in a bilingual Arabic-English UI. Paymob online payments are wired in sandbox mode. Personal project built with AI assistance; no production customers.",
+    image: "/gympilot.png",
+    category: "fullstack",
+    tech: ["React", "Vite", "REST API", "JWT Auth", "Paymob", "Arabic/English i18n"],
+    liveUrl: "https://gympilot-beta.vercel.app/",
+    githubUrl: null,
+    featured: true
+  },
   {
     id: 6,
     title: "Souq - MERN E-Commerce Store",
