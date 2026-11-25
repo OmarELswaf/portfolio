@@ -1,4 +1,4 @@
-import { FiMail } from 'react-icons/fi';
+import { PiEnvelopeSimple, PiLinkedinLogo } from 'react-icons/pi';
 import { personalInfo } from '../../data/portfolioData';
 import Reveal from '../ui/Reveal';
 import SectionHeading from '../ui/SectionHeading';
@@ -6,18 +6,16 @@ import SectionHeading from '../ui/SectionHeading';
 export default function Contact() {
   return (
     <section id="contact" className="py-20 scroll-mt-16">
-      <div className="max-w-6xl mx-auto px-5 md:px-8">
+      <div className="max-w-6xl mx-auto px-4 md:px-8">
         <Reveal>
           <SectionHeading index="05" title="Contact" />
-          <div className="relative glass rounded-3xl p-8 md:p-14 text-center overflow-hidden">
-            <div className="blob w-64 h-64 bg-[var(--accent)] -top-20 -right-20" />
-            <h3 className="relative text-3xl md:text-4xl font-extrabold">Let's build something <span className="grad-text">together</span></h3>
-            <p className="relative mt-4 text-[var(--text-muted)] max-w-xl mx-auto">
-              I'm open to junior full-stack roles and paid internships, and I reply to freelance inquiries too. Email is the fastest way to reach me.
-            </p>
-            <a href={personalInfo.socials.email} className="relative mt-8 inline-flex items-center gap-2 px-7 py-3.5 rounded-full font-semibold text-white bg-gradient-to-r from-[var(--accent)] to-[var(--accent2)] hover:scale-105 transition-transform">
-              Say hello <FiMail />
-            </a>
+          <div className="card rounded-3xl p-8 md:p-12 text-center">
+            <h3 className="heading-4 max-w-[680px] mx-auto">Open to junior full stack roles and paid internships</h3>
+            <p className="body-3 mt-4 max-w-[680px] mx-auto" style={{ color: 'var(--text-muted)' }}>I also reply to freelance inquiries. Email is the fastest way to reach me.</p>
+            <div className="mt-8 flex flex-wrap gap-3 justify-center">
+              <a href={personalInfo.socials.email} className="btn btn-primary">Email Omar <PiEnvelopeSimple size={20} /></a>
+              <a href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer" className="btn btn-ghost">LinkedIn <PiLinkedinLogo size={20} /></a>
+            </div>
           </div>
         </Reveal>
       </div>
