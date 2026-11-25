@@ -1,10 +1,9 @@
-// Numbered mono section heading, e.g. "02. Experience"
 export default function SectionHeading({ index, title }) {
   return (
-    <h2 className="flex items-baseline gap-3 mb-10">
-      <span className="mono text-[var(--accent)] text-lg">{index}.</span>
-      <span className="text-2xl md:text-3xl font-bold text-[var(--text)] whitespace-nowrap">{title}</span>
-      <span className="hidden md:block flex-1 h-px bg-[var(--border)] self-center ml-2" />
+    <h2 className="flex items-center gap-4 mb-12">
+      <span className="mono text-sm px-2.5 py-1 rounded-md bg-[var(--accent-tint)] text-[var(--accent)]">{index}</span>
+      <span className="text-3xl md:text-4xl font-extrabold tracking-tight">{title}</span>
+      <span className="hidden md:block flex-1 h-px bg-gradient-to-r from-[var(--border)] to-transparent" />
     </h2>
   );
 }
