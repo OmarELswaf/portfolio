@@ -1,3 +1,5 @@
+import { restaurantImg, mathImg } from "./projectImages.js";
+
 export const personalInfo = {
   name: "Omar Elsawaf",
   firstName: "Omar",
@@ -119,7 +121,7 @@ export const projects = [
     id: 16,
     title: "Alsawaf Math Platform - Teacher Landing Page & Learning Platform",
     description: "Arabic RTL landing page and learning platform I am building for my father, a math teacher: student, parent, teacher and admin roles, teacher-made exams with auto-grading, parent follow-up of results, and a question bank by grade. Installable PWA on free hosting. Early-stage and not yet used with real students; built with AI assistance.",
-    image: "/alsawaf-math.png",
+    image: mathImg,
     category: "fullstack",
     tech: ["HTML", "CSS", "JavaScript", "Supabase", "PostgreSQL", "PWA", "Arabic RTL"],
     liveUrl: "https://alsawaf-math.pages.dev/",
@@ -130,7 +132,7 @@ export const projects = [
     id: 15,
     title: "Restaurant Ordering SaaS (Egypt)",
     description: "Ordering platform for Egyptian restaurants, Arabic throughout: a customer website with cart and checkout, a simulated WhatsApp-style ordering bot in Egyptian Arabic, live order tracking, a PIN-protected owner dashboard with reports, InstaPay/Vodafone Cash payment-proof review, and self-serve restaurant onboarding. Demo on free Cloudflare hosting with fictional restaurants; the chat is a browser simulation, not a real WhatsApp integration. Built with AI assistance.",
-    image: "/restaurant-saas.png",
+    image: restaurantImg,
     category: "fullstack",
     tech: ["Cloudflare Workers", "JavaScript", "REST API", "Arabic RTL", "PWA"],
     liveUrl: "https://restaurant-saas-demo.alsawaf-3mor.workers.dev",
