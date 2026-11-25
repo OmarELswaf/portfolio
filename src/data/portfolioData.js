@@ -23,7 +23,7 @@ export const personalInfo = {
 
 export const stats = [
   { value: 1, suffix: "+", label: "Years Working" },
-  { value: 15, suffix: "", label: "Featured Projects" },
+  { value: 17, suffix: "", label: "Featured Projects" },
   { value: 2, suffix: "", label: "Training Programs" },
   { value: 2, suffix: "", label: "Employers" }
 ];
@@ -118,6 +118,28 @@ export const experience = [
 
 export const projects = [
   {
+    id: 17,
+    title: "FairSlot - Waitlist Booking App",
+    description: "Booking app where a cancelled slot is offered to the next person on the waitlist with a time-limited claim, and simultaneous bookings of the same slot let only one succeed. React front end, ASP.NET Core Web API and SQL Server. SMS notifications are simulated. A personal learning project on free hosting with synthetic data; the demo may take a moment to wake.",
+    image: "/fairslot.jpg",
+    category: "fullstack",
+    tech: ["React", "ASP.NET Core", "C#", "SQL Server", "Concurrency"],
+    liveUrl: "https://fairslot-demo.runasp.net/",
+    githubUrl: null,
+    featured: true
+  },
+  {
+    id: 18,
+    title: "FixFlow - Multi-tenant Repair Shop SaaS",
+    description: "Arabic-first (RTL, English supported) app for phone and laptop repair shops: repair orders with a status workflow, parts inventory, reports and a public page per shop. Tenants are isolated with PostgreSQL row-level security. React, TypeScript, NestJS, Prisma, installable PWA. A development demo with fake data and no billing; the free host sleeps when idle, so the first load can take about a minute. Built with AI assistance.",
+    image: "/fixflow.jpg",
+    category: "fullstack",
+    tech: ["React", "TypeScript", "NestJS", "Prisma", "PostgreSQL", "PWA", "Arabic RTL"],
+    liveUrl: "https://fixflow-demo-y125.onrender.com/s/demo-repair-shop",
+    githubUrl: null,
+    featured: true
+  },
+  {
     id: 16,
     title: "Alsawaf Math Platform - Teacher Landing Page & Learning Platform",
     description: "Arabic RTL landing page and learning platform I am building for my father, a math teacher: student, parent, teacher and admin roles, teacher-made exams with auto-grading, parent follow-up of results, and a question bank by grade. Installable PWA on free hosting. Early-stage and not yet used with real students; built with AI assistance.",
@@ -131,10 +153,10 @@ export const projects = [
   {
     id: 15,
     title: "Restaurant Ordering SaaS (Egypt)",
-    description: "Ordering platform for Egyptian restaurants, Arabic throughout: a customer website with cart and checkout, a simulated WhatsApp-style ordering bot in Egyptian Arabic, live order tracking, a PIN-protected owner dashboard with reports, InstaPay/Vodafone Cash payment-proof review, and self-serve restaurant onboarding. Demo on free Cloudflare hosting with fictional restaurants; the chat is a browser simulation, not a real WhatsApp integration. Built with AI assistance.",
+    description: "Ordering platform for Egyptian restaurants, Arabic throughout: a customer website with cart and checkout, a simulated WhatsApp-style ordering bot in Egyptian Arabic, live order tracking, a PIN-protected owner dashboard with reports and analytics, a platform admin with plans, InstaPay/Vodafone Cash payment-proof review, and self-serve restaurant onboarding. Demo on free Cloudflare hosting with fictional restaurants; the chat is a browser simulation, not a real WhatsApp integration. Built with AI assistance.",
     image: restaurantImg,
     category: "fullstack",
-    tech: ["Cloudflare Workers", "JavaScript", "REST API", "Arabic RTL", "PWA"],
+    tech: ["Cloudflare Workers", "D1", "JavaScript", "REST API", "Arabic RTL", "PWA"],
     liveUrl: "https://restaurant-saas-demo.alsawaf-3mor.workers.dev",
     githubUrl: null,
     featured: true
