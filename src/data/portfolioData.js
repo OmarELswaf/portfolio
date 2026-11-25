@@ -21,7 +21,7 @@ export const personalInfo = {
 
 export const stats = [
   { value: 1, suffix: "+", label: "Years Working" },
-  { value: 13, suffix: "", label: "Featured Projects" },
+  { value: 15, suffix: "", label: "Featured Projects" },
   { value: 2, suffix: "", label: "Training Programs" },
   { value: 2, suffix: "", label: "Employers" }
 ];
@@ -116,12 +116,34 @@ export const experience = [
 
 export const projects = [
   {
+    id: 16,
+    title: "Alsawaf Math Platform - Teacher Landing Page & Learning Platform",
+    description: "Arabic RTL landing page and learning platform I am building for my father, a math teacher: student, parent, teacher and admin roles, teacher-made exams with auto-grading, parent follow-up of results, and a question bank by grade. Installable PWA on free hosting. Early-stage and not yet used with real students; built with AI assistance.",
+    image: "/alsawaf-math.png",
+    category: "fullstack",
+    tech: ["HTML", "CSS", "JavaScript", "Supabase", "PostgreSQL", "PWA", "Arabic RTL"],
+    liveUrl: "https://alsawaf-math.pages.dev/",
+    githubUrl: null,
+    featured: true
+  },
+  {
+    id: 15,
+    title: "Restaurant Ordering SaaS (Egypt)",
+    description: "Ordering platform for Egyptian restaurants, Arabic throughout: a customer website with cart and checkout, a simulated WhatsApp-style ordering bot in Egyptian Arabic, live order tracking, a PIN-protected owner dashboard with reports, InstaPay/Vodafone Cash payment-proof review, and self-serve restaurant onboarding. Demo on free Cloudflare hosting with fictional restaurants; the chat is a browser simulation, not a real WhatsApp integration. Built with AI assistance.",
+    image: "/restaurant-saas.png",
+    category: "fullstack",
+    tech: ["Cloudflare Workers", "JavaScript", "REST API", "Arabic RTL", "PWA"],
+    liveUrl: "https://restaurant-saas-demo.alsawaf-3mor.workers.dev",
+    githubUrl: null,
+    featured: true
+  },
+  {
     id: 13,
     title: "GymPilot - Gym Management Platform",
     description: "Multi-tenant gym management platform, live in beta: members and subscription plans with balances, QR-code check-in, class scheduling and booking, a member self-service app, billing and reports, in a bilingual Arabic-English UI. Paymob online payments are wired in sandbox mode. Personal project built with AI assistance; no production customers.",
     image: "/gympilot.png",
     category: "fullstack",
-    tech: ["React", "Vite", "REST API", "JWT Auth", "Paymob", "Arabic/English i18n"],
+    tech: ["React", "TypeScript", "NestJS", "Prisma", "PostgreSQL", "Paymob (sandbox)"],
     liveUrl: "https://gympilot-beta.vercel.app/",
     githubUrl: null,
     featured: true
